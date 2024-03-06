@@ -5,10 +5,6 @@
 conda create --name mlep python=3.8 -y
 ```
 
-```
-conda create --name mlep python=3.8 -y
-```
-
 ```bash
 conda activate mlep
 ```
