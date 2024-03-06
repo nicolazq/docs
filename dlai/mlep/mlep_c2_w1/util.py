@@ -1,3 +1,5 @@
+import pandas as pd
+
 def add_extra_rows(df):
     rows = [
         {
@@ -69,6 +71,7 @@ def add_extra_rows(df):
         }
     ]
     
-    df = df.append(rows, ignore_index=True)
+    # df = df.append(rows, ignore_index=True)
+    df = pd.concat([df, pd.DataFrame.from_records(rows)], ignore_index=True)
     
     return df
